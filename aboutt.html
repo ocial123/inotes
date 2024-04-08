@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNotes - Online Note Taking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            transition: color 0.3s;
+        }
+        .features {
+            margin-top: 20px;
+        }
+        .feature {
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .feature h2 {
+            color: #333;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+        .feature p {
+            color: #666;
+            transition: color 0.3s;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to iNotes - Your Online Note-Taking Solution</h1>
+        <p>iNotes is a simple and efficient online platform for creating and storing notes securely in a MySQL database.</p>
+        <div class="features">
+            <div class="feature">
+                <h2>Easy Note Creation</h2>
+                <p>Create notes quickly and easily with our intuitive interface.</p>
+            </div>
+            <div class="feature">
+                <h2>Secure Storage</h2>
+                <p>Your notes are securely stored in a MySQL database to ensure data integrity.</p>
+            </div>
+            <div class="feature">
+                <h2>Convenient Access</h2>
+                <p>Access your notes from anywhere with an internet connection.</p>
+            </div>
+            <div class="feature">
+                <h2>Send Email</h2>
+                <form action="mail.php" method="post">
+                    <label for="email">Enter Receiver Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Send Email</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
